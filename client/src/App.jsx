@@ -26,9 +26,17 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
-      {/* Background Overlay (Always Visible) */}
-      <div className="absolute inset-0 -z-10 bg-pattern bg-cover bg-center opacity-20 dark:opacity-30"></div>
+    <div className="relative min-h-screen flex flex-col bg-stone-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+      {/* Background GIF */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          // src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2J3ejhhbTEya3A2MTg1ZWRxNzhlcnd4b2V4cG9lZTM5MW5vZ2xtaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pl0n6cq0Ly1giE19Ey/giphy.gif"
+          // src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXEzbW84YTY5NWJ2cTJoemkyaGVzazQzaXoyNzVuMjdrOGV0bzYydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5kvxFZqlxiabJG8LDn/giphy.gif"
+          src="https://media.istockphoto.com/id/1092254154/photo/modern-tv-or-pc-monitor-on-gray-background.jpg?s=612x612&w=0&k=20&c=P7Fz9AK368w1NmR7CHgGF_CR80S6bhcho2TogqQ2HpQ="
+          alt="Cool Animated Background"
+          className="w-full h-full object-cover opacity-30 dark:opacity-50"
+        />
+      </div>
 
       {/* Header */}
       <Header />
@@ -36,7 +44,7 @@ function App() {
       {/* Dark Mode Toggle Button */}
       <button
         onClick={() => setDarkMode(!darkMode)}
-        className="fixed top-28 right-0 px-0 py-0 bg-gray-700 text-white rounded-lg shadow-md hover:bg-gray-600 transition"
+        className="fixed top-1/2 right-4 px-2 py-1 bg-gray-700 text-white rounded-lg shadow-md hover:bg-gray-600 transition"
       >
         {darkMode ? "☀️" : "🌙"}
       </button>
@@ -44,7 +52,7 @@ function App() {
       {/* Main Content */}
       <main className="w-full flex flex-col items-center pt-20">
         {/* Content Container */}
-        <div className="w-full max-w-7xl px-10 py-10 bg-white dark:bg-gray-800 dark:border-gray-600 backdrop-blur-lg shadow-lg rounded-lg border border-gray-200">
+        <div className="w-full max-w-7xl px-0 py-3 bg-white dark:bg-gray-800 dark:border-gray-600 backdrop-blur-lg shadow-lg rounded-lg border border-gray-200">
           <Hero />
           <About />
           <Services />
