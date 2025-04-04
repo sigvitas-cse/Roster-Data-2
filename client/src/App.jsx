@@ -26,7 +26,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="relative min-h-screen flex flex-col bg-stone-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+    <div className="relative min-h-screen flex flex-col bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
       {/* Background GIF */}
       <div className="absolute inset-0 -z-10">
         <img
@@ -50,7 +50,7 @@ function App() {
       </button>
 
       {/* Main Content */}
-      <main className="w-full flex flex-col items-center pt-20">
+      <main className="w-full flex flex-col items-center pt-24">
         {/* Content Container */}
         <div className="w-full max-w-7xl px-0 py-3 bg-white dark:bg-gray-800 dark:border-gray-600 backdrop-blur-lg shadow-lg rounded-lg border border-gray-200">
           <Hero />

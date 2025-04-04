@@ -57,7 +57,7 @@ function Header() {
         <img 
           src="/Triangle-IP-Logo.png" 
           alt="Triangle IP Logo" 
-          className="h-14 w-auto"
+          className="h-16 w-auto"
         />
 
 
